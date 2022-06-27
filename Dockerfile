@@ -1,4 +1,4 @@
 FROM golang:1.15
 COPY . .
-RUN go k8s -o server .
+RUN go build -o server .
 CMD ["./server"]
